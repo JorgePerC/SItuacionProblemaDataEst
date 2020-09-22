@@ -23,6 +23,8 @@ Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estruct
 
 1. ¿Cuántos registros tiene tu archivo? 
 
+*Según las líneas del CSV*: **36590** 
+
 2. ¿Cuántos récords hay del segundo día registrado? ¿Qué día es este? 
 
 3. ¿Alguna de las computadoras pertenece a Jeffrey, Betty, Katherine, Scott, Benjamin, Samuel o Raymond? ¿A quiénes?
@@ -31,9 +33,21 @@ Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estruct
 
 5. ¿Alguna computadora se llama server.reto.com? 
 
+*Según la búsqueda en el CSV*: **No** 
+
 6. ¿Qué servicio de correo electrónico utilizan (algunas ideas: Gmail, Hotmail, Outlook, Protonmail)? 
 
 7. Considerando solamente los puertos destino ¿Qué puertos abajo del 1000 se están usando? Lista los puertos e investiga qué aplicación/servicio lo utiliza generalmente. 
+
+**Puerto:**
+1. *53*: 
+2. *67*: 
+3. *993*: 
+4. *465*: 
+5. *443*: 
+6. *80*:
+1. *965*:  
+7. *OTRO?*:  
 
 
 ## Reflexiones personales:
