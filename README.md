@@ -17,7 +17,9 @@ En este trabajo, los tipos de datos abstactos impletados son:
 
 **Algorimos de búsqueda**
 
-Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estructuras de datos, así como algoritmos de búsqueda. Sin embargo, decidomos ocupar $inserte algoritmo$, debido a lo siguente:
+Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estructuras de datos, así como algoritmos de búsqueda. Sin embargo, decidimos ocupar quicksort para podenar por los **puertos?**, debido a lo siguente:
+
+1. Es el algoritmo más eficiente con una complejidad de tipo O( n log2 n).
 
 ## Preguntas:
 
@@ -27,7 +29,7 @@ De acuerdo a nuestro conteo: **36599**
 
 2. ¿Cuántos récords hay del segundo día registrado? ¿Qué día es este? 
 
-El programa arrogó un total de 3302 registros. E identificó al segundo día como: 11-8-2020.
+El programa arrogó un total de **3302** registros. E identificó al segundo día como: **11-8-2020**.
 
 3. ¿Alguna de las computadoras pertenece a Jeffrey, Betty, Katherine, Scott, Benjamin, Samuel o Raymond? ¿A quiénes?
 
@@ -47,210 +49,7 @@ Según nuestro programa: **No**
 6. ¿Qué servicio de correo electrónico utilizan (algunas ideas: Gmail, Hotmail, Outlook, Protonmail)? 
 Al preguntar por los sitos que se visitaban, el programa arrojó los siguientes resultados: 
 
-freemailserver.com
-
-yahoo.com
-
-msn.com
-
-live.com
-
-mail.yahoo.com
-
-washingtonpost.com
-
-etsy.com
-
-indeed.com
-
-espn.com
-
-apartments.com
-
-quora.com
-
-tripadvisor.com
-
-businessinsider.com
-
-nih.gov
-
-britannica.com
-
-pinterest.com
-
-rottentomatoes.com
-
-retailmenot.com
-
-wikihow.com
-
-walmart.com
-
-spotify.com
-
-urbandictionary.com
-
-theguardian.com
-
-facebook.com
-
-target.com
-
-imdb.com
-
-wayfair.com
-
-instagram.com
-
-twitter.com
-
-webmd.com
-
-linkedin.com
-
-chase.com
-
-play.google.com
-
-craigslist.org
-
-huffpost.com
-
-groupon.com
-
-bestbuy.com
-
-hulu.com
-
-fandom.com
-
-dictionary.com
-
-youtube.com
-
-usnews.com
-
-usps.com
-
-allrecipes.com
-
-irs.gov
-
-foxnews.com
-
-finance.yahoo.com
-
-wellsfargo.com
-
-accuweather.com
-
-quizlet.com
-
-mapquest.com
-
-gamepedia.com
-
-paypal.com
-
-wiktionary.org
-
-cnet.com
-
-medicalnewstoday.com
-
-usatoday.com
-
-ebay.com
-
-steampowered.com
-
-google.com
-
-office.com
-
-steamcommunity.com
-
-yelp.com
-
-netflix.com
-
-glassdoor.com
-
-genius.com
-
-forbes.com
-
-en.wikipedia.org
-
-cbssports.com
-
-investopedia.com
-
-lowes.com
-
-ca.gov
-
-healthline.com
-
-macys.com
-
-apple.com
-
-bankofamerica.com
-
-go.com
-
-aol.com
-
-expedia.com
-
-reddit.com
-
-foodnetwork.com
-
-microsoft.com
-
-weather.com
-
-homedepot.com
-
-xfinity.com
-
-bbb.org
-
-npr.org
-
-merriam-webster.com
-
-ign.com
-
-amazon.com
-
-yellowpages.com
-
-techradar.com
-
-roblox.com
-
-bleacherreport.com
-
-cnn.com
-
-books.google.com
-
-zillow.com
-
-mayoclinic.org
-
-nytimes.com
-
-fb.com
-
-8w2v29sbezi1btcj4txw.com
-
-euo5ychfvuhangmtt8uh.ru
-
+freemailserver | washingtonpost | etsy | indeed | espn | apartments | quora | tripadvisor | businessinsider | nih | britannica | pinterest | rottentomatoes | retailmenot | wikihow | walmart | spotify | urbandictionary | theguardian | facebook | target | imdb | wayfair | instagram | yahoo | msn | twitter | webmd | linkedin | chase | google | craigslist | huffpost | groupon | bestbuy | live | hulu | fandom | dictionary | youtube | usnews | usps | allrecipes | irs | foxnews | wellsfargo | accuweather | quizlet | mapquest | gamepedia | paypal | wiktionary | cnet | medicalnewstoday | usatoday | ebay | steampowered | office | steamcommunity | yelp | netflix | glassdoor | genius | forbes | wikipedia | cbssports | investopedia | lowes | ca | healthline | macys | apple | bankofamerica | go | aol | expedia | reddit | foodnetwork | microsoft | weather | homedepot | xfinity | bbb | npr | merriam-webster | ign | amazon | yellowpages | techradar | roblox | bleacherreport | cnn | zillow | mayoclinic | nytimes | fb | 8w2v29sbezi1btcj4txw | euo5ychfvuhangmtt8uh
 
 Creemos que el número de sitos de correo se puede reducir al crear un filtro doble. Donde se obtengan los resultados únicos de los sitios visitados y el número de puerto que lo representa. 
 
@@ -269,9 +68,9 @@ Creemos que el número de sitos de correo se puede reducir al crear un filtro do
 La información fue obtenida de: https://www.utilizewindows.com/list-of-common-network-port-numbers/ y de: https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html
 
 ## TODO list/Repartición de tareas:
-[x] Leer archivo .csv -> J
-[x] Crear vector con datos del archivo ->
-[x] Ordenar ...->
+- [x] Leer archivo .csv -> J
+- [x] Crear vector con datos del archivo ->
+- [x] Ordenar ...->
 
 ## Reflexiones personales:
 
