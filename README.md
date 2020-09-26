@@ -23,7 +23,7 @@ Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estruct
 
 1. ¿Cuántos registros tiene tu archivo? 
 
-*Según las líneas del CSV*: **36590** 
+De acuerdo a nuestro conteo: **36599** 
 
 2. ¿Cuántos récords hay del segundo día registrado? ¿Qué día es este? 
 
@@ -40,14 +40,16 @@ Durante estas 5 semanas hemos aprendido y conocido algunas de diferentes estruct
 7. Considerando solamente los puertos destino ¿Qué puertos abajo del 1000 se están usando? Lista los puertos e investiga qué aplicación/servicio lo utiliza generalmente. 
 
 **Puerto:**
-1. *53*: 
-2. *67*: 
-3. *993*: 
-4. *465*: 
-5. *443*: 
-6. *80*:
-1. *965*:  
-7. *OTRO?*:  
+1. *53*: Domain Name System (DNS)
+2. *67*: Dynamic Host Configuration Protocol (DHCP)
+3. *993*: Internet Message Access Protocol over Secure Sockets Layer (IMAPS)
+4. *465*: Simple Mail Transfer Protocol over Secure Sockets Layer (SMTPS)
+5. *443*: HTTP with Secure Sockets Layer (SSL) 
+6. *80*: HyperText Transfer Protocol (HTTP)
+7. *965*: 404, no se encontró registro
+
+La información fue obtenida de: https://www.utilizewindows.com/list-of-common-network-port-numbers/ y de: https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html
+
 
 
 ## Reflexiones personales:
