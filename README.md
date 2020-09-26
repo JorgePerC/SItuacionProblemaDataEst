@@ -11,9 +11,10 @@ Jorge Pérez
 El ADT (Abstract Data Types), por sus siglas en inglés, es un tipo de dato el cual encapsula el funcionamiento e implementación de sus métodos. Dejándo sólo a la vista los métodos con los cuales el usuario puede interactuar. 
 
 En este trabajo, los tipos de datos abstactos impletados son: 
-1. Lal
-2. Lel
-3. Lil (o y Stich)
+1. CSV
+2. Details
+3. Filter
+4. Search
 
 **Algorimos de búsqueda**
 
@@ -37,7 +38,7 @@ Sí, detectamos que hay computadoras de **Katherine y Samuenl**
 
 4. ¿Cuál es la dirección de la red interna de la compañía? 
 
-Identificamos a reto.com como el servidor de la red interna. Así mismo, de acuerdo a Comparaiso, las computadoras tienen dos direcciones IP, la primera es local y cambia con cada dispostivo, así como una dirección pública. Debido a que todas las direcciones empezaban por 192.168.155.NN, creemos que la dirección del servidor de la compañía corresponde a la dirección IP de: 192.168.155.0
+Identificamos a reto.com como el servidor de la red interna. Así mismo, de acuerdo a Comparaiso, las computadoras tienen dos direcciones IP, la primera es local y cambia con cada dispostivo, así como una dirección pública. Debido a que todas las direcciones empezaban por 192.168.155.NN, creemos que la dirección del servidor de la compañía corresponde a la dirección IP de: **192.168.155.0**
 
 Recuperado de: https://comparaiso.mx/tutoriales/como-saber-mi-ip
 
@@ -68,14 +69,17 @@ Creemos que el número de sitos de correo se puede reducir al crear un filtro do
 La información fue obtenida de: https://www.utilizewindows.com/list-of-common-network-port-numbers/ y de: https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-ports.html
 
 ## TODO list/Repartición de tareas:
-- [x] Leer archivo .csv -> J
-- [x] Crear vector con datos del archivo ->
-- [x] Ordenar ...->
+- [x] Crear clase CSV -> J
+- [x] Crear clase Details -> L
+- [x] Crear respuesta a pregunta 4, 2 y 3 -> J
+- [x] Crear respuesta a pregunta 1, 5, 6 y 7 -> L
 
 ## Reflexiones personales:
 
 ### Jorge
-Durante este proyecto tuve la oportunidad de trabajar con archivos .csv, lo cual era algo que nunca había hecho en C++. También pude cuestionar los usos que le doy a las computadoras, ya que el escoger los algoritmos que resuleven el problema de manera óptima tiene una gran diferencia. Y antes de implementar este tipo de métodos sólo ocupaba búsquedas líneales. 
+Durante este proyecto tuve la oportunidad de trabajar con archivos .csv, lo cual era algo que nunca había hecho en C++. También pude cuestionar los usos que le doy a las computadoras, ya que el escoger los algoritmos que resuleven el problema de manera óptima tiene una gran diferencia. Ya que antes de implementar este tipo de métodos sólo ocupaba búsquedas líneales. Las cuales no son del todo eficientes. A pesar de que ahora sé ocupar nuevos métodos para organizar la información, también aprendí la esencialidad de reccorrer todos los datos, ya que es la única manera que se puede hacer conteo de cosas. Es eso o usar un índice, sin embargo, aún no logro comprender del todo cómo funcionan.
+
+Como parte de mi invesigación: aprendí.
 
 
 ### Luis
