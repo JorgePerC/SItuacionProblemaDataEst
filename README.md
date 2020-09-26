@@ -83,3 +83,5 @@ Como parte de mi invesigación: aprendí.
 
 
 ### Luis
+Algo que no había hecho nunca con C++ era trabajar con archivos, todo había sido con datos nativos o clases construidas a partir de esto pero jamás con datos de forma masiva, lo cual lo hizo un reto interesante. Al principio mi idea era hacer todas estas diferentes clases para administrar cada sección a partir de Templates pero me di cuenta que para un proyecto tan específico es mejor hacerlo más detallado para el problema en si que para reciclar el códido. Algo que me pareció muy bueno fue buscar los diferntes tipos de búsqueda y de filtros(ordenamiento) y aprender con datos reales a implementar las soluciones, así como a decidir cual es el que conviene cuando de verdad se necesita, no solamente decidir por tener todas las opciones. 
+Para hacer este proyecto en específico creo que también tuvimos que hacer mucha investigación acerca de los diferentes algoritmos que habían y además al programarlo nos dimos cuenta creo que un par de debilidades que teníamos al programar en la que no confiabamos tanto en las estructuras, y tuvimos, o al menos yo tuve que aprender a confiar más en las diferentes estructuras. 
