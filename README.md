@@ -27,6 +27,8 @@ De acuerdo a nuestro conteo: **36599**
 
 2. ¿Cuántos récords hay del segundo día registrado? ¿Qué día es este? 
 
+El programa arrogó un total de 3302 registros. E identificó al segundo día como: 11-8-2020.
+
 3. ¿Alguna de las computadoras pertenece a Jeffrey, Betty, Katherine, Scott, Benjamin, Samuel o Raymond? ¿A quiénes?
 
 Sí, detectamos que hay computadoras de **Katherine y Samuenl**
