@@ -79,9 +79,16 @@ La información fue obtenida de: https://www.utilizewindows.com/list-of-common-n
 ### Jorge
 Durante este proyecto tuve la oportunidad de trabajar con archivos .csv, lo cual era algo que nunca había hecho en C++. También pude cuestionar los usos que le doy a las computadoras, ya que el escoger los algoritmos que resuleven el problema de manera óptima tiene una gran diferencia. Ya que antes de implementar este tipo de métodos sólo ocupaba búsquedas líneales. Las cuales no son del todo eficientes. A pesar de que ahora sé ocupar nuevos métodos para organizar la información, también aprendí la esencialidad de reccorrer todos los datos, ya que es la única manera que se puede hacer conteo de cosas. Es eso o usar un índice, sin embargo, aún no logro comprender del todo cómo funcionan.
 
-Como parte de mi invesigación: aprendí.
+Como parte de mi invesigación: aprendí que la parte más importante de un programa es su correcicción (que ejegute con exactitud sus tareas), y su eficiencia (usar la menor cantidad de recursos de hardware).
+
+Es por eso que la eficacia de los algoritos de búsqueda y su unión con estructuras de datos que tomen ventaja de ellos son necesarias, ya que a pesar de tener un buen algoritmo, puede que no se aproveche todo el potencial por no tener la estructura correcta. 
+
+En un breve resumen, no debemos de ocupar el agoritmo burbuja por su alta cantidad de comparaciones y comportamiento O(n2). Mientras que el quicksort es 99% más eficiente que el burbuja, por su complejidad O( n log2 n). Ya que se reduce drásticamente el número de compraciones que el método burbuja y su funcionamiento similar a una búsqueda binaria. 
+
+Un ejemplo donde la eficiencia es crucial es en un sistma de inscripciones de miles de personas, como el del Politécnico Nacional, o los almacenes de Amazon.
 
 
 ### Luis
 Algo que no había hecho nunca con C++ era trabajar con archivos, todo había sido con datos nativos o clases construidas a partir de esto pero jamás con datos de forma masiva, lo cual lo hizo un reto interesante. Al principio mi idea era hacer todas estas diferentes clases para administrar cada sección a partir de Templates pero me di cuenta que para un proyecto tan específico es mejor hacerlo más detallado para el problema en si que para reciclar el códido. Algo que me pareció muy bueno fue buscar los diferntes tipos de búsqueda y de filtros(ordenamiento) y aprender con datos reales a implementar las soluciones, así como a decidir cual es el que conviene cuando de verdad se necesita, no solamente decidir por tener todas las opciones. 
+
 Para hacer este proyecto en específico creo que también tuvimos que hacer mucha investigación acerca de los diferentes algoritmos que habían y además al programarlo nos dimos cuenta creo que un par de debilidades que teníamos al programar en la que no confiabamos tanto en las estructuras, y tuvimos, o al menos yo tuve que aprender a confiar más en las diferentes estructuras. 
