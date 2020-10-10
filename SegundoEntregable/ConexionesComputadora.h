@@ -9,9 +9,12 @@ using namespace std;
 class ConexionesComputadora {
 
 private:
+    // Attributes
     string IP, name;
 
-    //Vector 
+    //Vectors 
     vector <string> incommingConct;
     vector <string> outgoingConct; 
+
+public: 
 };
