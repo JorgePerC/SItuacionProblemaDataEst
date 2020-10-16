@@ -13,12 +13,12 @@ ConexionesComputadora::ConexionesComputadora(string name, string IP){
     this -> name = name;
 }
 
-void ConexionesComputadora::add_incommingConct(Details* register){
-    incommingConct.push_back(register -> getSource());
+void ConexionesComputadora::add_incommingConct(Details* connectionRegister){
+    incommingConct.push_back(connectionRegister -> getSourceIP());
 }
 
-void ConexionesComputadora::add_outgoingConct(Details* register){
-    outgoingConct.push_back(register -> getDestinationPort());
+void ConexionesComputadora::add_outgoingConct(Details* connectionRegister){
+    outgoingConct.push_back(connectionRegister -> getDestinationIP());
 }
 
 string const ConexionesComputadora::get_IP(){
@@ -36,7 +36,4 @@ vector <string> const ConexionesComputadora :: get_outgoingConct(){
 
 }
 
-/**
- * Class to manage ConexionesComputadora 
- * Just to try reduce ejecution times
- */
+
