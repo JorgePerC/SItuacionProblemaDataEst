@@ -50,6 +50,10 @@ int Details::getDestinationPort() {
     return this->destinationPort;
 }
 
+string Details :: getDestinationIP(){
+    return this -> destinationIp;
+}
+
 bool Details::sortSourcePortAsc(Details a, Details b) {
     return a.sourcePort < b.sourcePort;
 }

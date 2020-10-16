@@ -34,6 +34,7 @@ public:
     string getSourceName();
     string getSourceIP();
     string getDestinationName();
+    string getDestinationIP();
     int getDestinationPort();
     bool sortSourcePortAsc(Details a, Details b);
     bool sortSourcePortDesc(Details a, Details b);

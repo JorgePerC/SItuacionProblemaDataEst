@@ -14,11 +14,11 @@ ConexionesComputadora::ConexionesComputadora(string name, string IP){
 }
 
 void ConexionesComputadora::add_incommingConct(Details* register){
-    incommingConct.push_back(register -> );
+    incommingConct.push_back(register -> getSource());
 }
 
 void ConexionesComputadora::add_outgoingConct(Details* register){
-    incommingConct.push_back(register -> getDestinationPort());
+    outgoingConct.push_back(register -> getDestinationPort());
 }
 
 string const ConexionesComputadora::get_IP(){
@@ -33,7 +33,7 @@ vector <string> const ConexionesComputadora :: get_incommingConct(){
 
 }
 vector <string> const ConexionesComputadora :: get_outgoingConct(){
-    
+
 }
 
 /**
