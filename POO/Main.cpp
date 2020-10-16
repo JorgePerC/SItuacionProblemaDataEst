@@ -7,11 +7,13 @@
 //
 
 #include <stdio.h>
+#include <algorithm>
+#include <unistd.h>
 #include "Details.hpp"
 #include "CSV.hpp"
 #include "Search.hpp"
 #include "Filter.hpp"
-#include <unistd.h>
+
 
 using namespace std;
 
@@ -140,7 +142,12 @@ vector<int> answerQ7(vector<Details> details) {
     return ports;
 }
 
-int main(int argc, const char * argv[]) {
+// LE CAMBIÉ EL NOMBRE PARA QUE NO TUVIERA DOS DECLARACIONES
+//
+// !
+// ! ! 
+// ! ! !
+int main2(int argc, const char * argv[]) {
     CSV csv = CSV("/Users/LuiggiFernandez/Desktop/LF_Coding/Projects/LF_Coding/POO_Class/POO_Class/POO/equipo4.csv");
     vector<Details> details = csv.read_csv_details();
     Filter filter = Filter(details);

@@ -55,7 +55,7 @@ vector<Details> CSV::read_csv_details() {
         stringstream aconv(a);
         aconv >> aTest;
         if (aTest == "-") {
-            stringstream conva(-1);
+            stringstream conva("-1");
             conva >> sourcePort;
         } else {
             stringstream conva(a);
@@ -67,7 +67,7 @@ vector<Details> CSV::read_csv_details() {
         stringstream bconv(b);
         bconv >> bTest;
         if (bTest == "-") {
-            stringstream convb(-1);
+            stringstream convb("-1");
             convb >> destinationPort;
         } else {
             stringstream convb(b);
