@@ -30,10 +30,10 @@ string const ConexionesComputadora::get_name(){
 }
 
 vector <string> const ConexionesComputadora :: get_incommingConct(){
-
+    return incommingConct;
 }
 vector <string> const ConexionesComputadora :: get_outgoingConct(){
-
+    return outgoingConct;
 }
 
 

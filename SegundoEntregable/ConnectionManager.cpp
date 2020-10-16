@@ -4,9 +4,6 @@
 ConnectionManager::ConnectionManager(/* args */){
     
 }
-ConnectionManager::ConnectionManager(){
-    
-}
 
 ConnectionManager::~ConnectionManager()
 {
