@@ -11,11 +11,20 @@
 CSV::CSV() {
     this->filename = "";
 }
-
+/**
+ * Class to read file.csv
+ * Arg:
+ *  string filename -> name of the file to read
+ */
 CSV::CSV(string filename) {
     this->filename = filename;
 }
 
+/**
+ * Returns a vector containg the information
+ * from the file.csv. Vector type is Details.
+ * Iterates over the file.csv lines.
+ */
 vector<Details> CSV::read_csv_details() {
     vector<Details> lines;
     ifstream file(this->filename);

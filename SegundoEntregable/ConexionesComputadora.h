@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include "../POO/Details.hpp"
 
 #pragma once
 
@@ -17,4 +18,19 @@ private:
     vector <string> outgoingConct; 
 
 public: 
+    //SourceIp, SourceName : vector <Details>
+    ConexionesComputadora ();
+    ConexionesComputadora (string, string);
+    //Returns incomingConct *Puedo cambiar la estructura
+    vector <string> const get_incommingConct();
+    vector <string> const get_outgoingConct();
+
+    string const get_name();
+    string const get_IP();
+
+    //usar details.getConnct
+    void add_incommingConct(Details*);
+    void add_outgoingConct(Details*);
+    
+    
 };

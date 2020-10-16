@@ -34,6 +34,10 @@ string Details::getDate() {
     return this->date;
 }
 
+string Details :: getSourceIP(){
+    return this -> sourceIp;
+}
+
 string Details::getSourceName() {
     return this->sourceName;
 }

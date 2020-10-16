@@ -32,6 +32,7 @@ public:
     Details(string date, string time, string sourceIp, int sourcePort, string sourceName, string destinationIp, int destinationPort, string destinationName);
     string getDate();
     string getSourceName();
+    string getSourceIP();
     string getDestinationName();
     int getDestinationPort();
     bool sortSourcePortAsc(Details a, Details b);
