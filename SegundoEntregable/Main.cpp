@@ -13,5 +13,6 @@ int main(int argc, char const *argv[]){
     
     vector<Details> detalles = file.read_csv_details();
 
+    cout << "Hola" << endl;
     return 0;
 }
