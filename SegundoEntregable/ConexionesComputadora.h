@@ -28,7 +28,7 @@ public:
     string const get_name();
     string const get_IP();
 
-    //usar details.getConnct
+    //Add a registers to the ip
     void add_incommingConct(Details*);
     void add_outgoingConct(Details*);
     
