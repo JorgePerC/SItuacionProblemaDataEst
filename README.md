@@ -1,5 +1,5 @@
 # SituacionProblemaDataEst
-Repositorio para la primera evidencia de la clase de Estructuras de Datos. 
+Repositorio para las evidencias de la clase de Estructuras de Datos. 
 
 ## Autores: 
 Luis Fernández y
