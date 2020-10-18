@@ -18,15 +18,15 @@ int main(int argc, char const *argv[]){
 
     datos -> fill_allConnections();
 
+    vector <ConexionesComputadora> resultado = datos->get_allConnections();
+
+    cout << "Tamaño: " << resultado.size() << endl;
+
     for (auto detail : detalles){
         datos -> registerConnections(detail);
     }
 
     
-
-    vector <ConexionesComputadora> resultado = datos->get_allConnections();
-
-    cout << "Tamaño: " << resultado.size() << endl;
     for (auto res : resultado){
         cout << res << endl;
         res.show_incommingConct();

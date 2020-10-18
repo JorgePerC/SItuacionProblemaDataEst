@@ -16,11 +16,11 @@ ConexionesComputadora::ConexionesComputadora(Details d){
 }
 
 void ConexionesComputadora::add_incommingConct(Details connectionRegister){
-    incommingConct.push_back(connectionRegister.getSourceIP());
+    incommingConct.push_back(connectionRegister.getDestinationIP());
 }
 
 void ConexionesComputadora::add_outgoingConct(Details connectionRegister){
-    outgoingConct.push_back(connectionRegister.getDestinationIP());
+    outgoingConct.push_back(connectionRegister.getSourceIP());
 }
 
 string const ConexionesComputadora::get_IP(){
@@ -53,7 +53,7 @@ void ConexionesComputadora ::show_incommingConct(){
     for (auto element: incommingConct){
         cout << "\t" << element << endl;
     }
-    cout << "-------------" << endl;
+    cout << "------------- "<< incommingConct.size() << endl;
 }
 
 void ConexionesComputadora ::show_outgoingConct(){

@@ -51,7 +51,13 @@ vector <ConexionesComputadora> ConnectionManager :: get_allConnections (){
 
 void ConnectionManager::registerConnections(Details d){
     for (auto cnct : allConnections){
+        cout << "Tryng to connect " << endl;
+        cout << d.getSourceIP()  << " " << 
+        d.getDestinationIP()<<" "<<cnct.get_IP() << " " 
+            << (d.getSourceIP().compare(cnct.get_IP()) == 0) <<
+            ", " << ((d.getDestinationIP().compare(cnct.get_IP()) == 0)) << endl;
         if (d.getSourceIP().compare(cnct.get_IP()) == 0){
+            cout << "Entra" << endl;
             cnct.add_outgoingConct (d);
         }
         if (d.getDestinationIP().compare(cnct.get_IP()) == 0){

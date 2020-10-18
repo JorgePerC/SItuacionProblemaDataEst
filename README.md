@@ -94,3 +94,10 @@ Un ejemplo donde la eficiencia es crucial es en un sistma de inscripciones de mi
 Algo que no había hecho nunca con C++ era trabajar con archivos, todo había sido con datos nativos o clases construidas a partir de esto pero jamás con datos de forma masiva, lo cual lo hizo un reto interesante. Al principio mi idea era hacer todas estas diferentes clases para administrar cada sección a partir de Templates pero me di cuenta que para un proyecto tan específico es mejor hacerlo más detallado para el problema en si que para reciclar el códido. Algo que me pareció muy bueno fue buscar los diferntes tipos de búsqueda y de filtros(ordenamiento) y aprender con datos reales a implementar las soluciones, así como a decidir cual es el que conviene cuando de verdad se necesita, no solamente decidir por tener todas las opciones. 
 
 Para hacer este proyecto en específico creo que también tuvimos que hacer mucha investigación acerca de los diferentes algoritmos que habían y además al programarlo nos dimos cuenta creo que un par de debilidades que teníamos al programar en la que no confiabamos tanto en las estructuras, y tuvimos, o al menos yo tuve que aprender a confiar más en las diferentes estructuras. 
+
+
+## Reflexiones personales (Segunda Parte):
+
+### Jorge:
+Durante el desarrollo de este entregable me percaté de la necesidad de implementar estructuras de datos linéales, debido a que constantemente me encontraba realizando for loops, los cuales iban incrementando poco a poco la complejidad del algoritmo. Lo cual lo hace ineficiente. También, realicé una pequeña investigación de qué era un vector. Con esto me di cuenta de su versatilidad, ya que se comporta de manera similar a una lista de arrays, (están agrupados en memoria). Lo que ayuda a reducir su tiempo de escritura y lectura, sin perder la posibilidad de poder cambiar su tamaño. 
+Algo que aún no me queda claro, es cúando debemos de utilizar cada estructura, para que se note esta mejora en rendimiento. Lo cual busco completar en un futuro.
