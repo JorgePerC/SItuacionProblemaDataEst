@@ -15,6 +15,8 @@ En este trabajo, los tipos de datos abstactos impletados son:
 2. Details
 3. Filter
 4. Search
+5. ConeccionesComputadora
+6. ConnectionManager
 
 **Algorimos de búsqueda**
 

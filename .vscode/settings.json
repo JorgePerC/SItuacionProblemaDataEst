@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "string": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "iosfwd": "cpp",
+        "typeinfo": "cpp"
     }
 }
