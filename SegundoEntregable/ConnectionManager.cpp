@@ -2,7 +2,6 @@
 #include "ConnectionManager.h"
 
 
-
 ConnectionManager::ConnectionManager(/* args */){
     cout << "Missing Vector" << endl;
 }
@@ -11,27 +10,25 @@ ConnectionManager::ConnectionManager(vector <Details> allregisters){
     this -> allDetails = allregisters;
 }
 
-
-
-
 vector <string> ConnectionManager :: get_IP_incommingConct(string IP){
     for (auto element : allConnections){
-        // PONER EQUALS Bien
-        if (IP == element.get_IP()){
+        if (IP.compare(element.get_IP()) == 0){
             return element.get_incommingConct();
         }
     }
+    vector <string> empty;
+    return empty;
 }
 
 vector <string> ConnectionManager :: get_IP_outgoingConct(string IP){
     for (auto element : allConnections){
-        // PONER EQUALS Bien
-        if (IP == element.get_IP()){
+        if (IP.compare(element.get_IP()) == 0){
             return element.get_outgoingConct();
         }
     }
+    vector <string> empty;
+    return empty;
 }
-
 
 string ConnectionManager:: getLocalIP (string completeIp){
     stringstream test(completeIp);
@@ -52,14 +49,32 @@ vector <ConexionesComputadora> ConnectionManager :: get_allConnections (){
     return allConnections;
 }
 
-void ConnectionManager::registerConnections(Details* d){
-    for (auto element : allConnections){
-        // PONER EQUALS Bien
-        if (d -> getSourceIP () == element.get_IP()){
-            element.add_outgoingConct (d);
+void ConnectionManager::registerConnections(Details d){
+    for (auto cnct : allConnections){
+        if (d.getSourceIP().compare(cnct.get_IP()) == 0){
+            cnct.add_outgoingConct (d);
         }
-        if (d ->getDestinationIP() == element.get_IP()){
-            element.add_incommingConct(d);
+        if (d.getDestinationIP().compare(cnct.get_IP()) == 0){
+            cnct.add_incommingConct(d);
         }
     }
+}
+
+void ConnectionManager::fill_allConnections (){
+    for (auto detail : allDetails ){
+        if( !isInAllConnections(detail)){
+            allConnections.push_back(ConexionesComputadora (detail));
+        }
+        
+    }
+}
+
+bool ConnectionManager:: isInAllConnections(Details d){
+    for (auto cnt : allConnections ){
+        if (d.getSourceIP().compare(cnt.get_IP()) == 0
+            || d.getSourceName().compare(cnt.get_name()) == 0){
+            return true;
+        }
+    }    
+    return false;
 }

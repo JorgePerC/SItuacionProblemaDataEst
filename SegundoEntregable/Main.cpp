@@ -14,11 +14,28 @@ int main(int argc, char const *argv[]){
     
     vector<Details> detalles = file.read_csv_details();
 
-    ConnectionManager datos ();
+    ConnectionManager* datos = new ConnectionManager(detalles);
 
-    for ( Details d :detalles){
-        cout << d << endl;
+    datos -> fill_allConnections();
+
+    for (auto detail : detalles){
+        datos -> registerConnections(detail);
     }
+
+    
+
+    vector <ConexionesComputadora> resultado = datos->get_allConnections();
+
+    cout << "Tamaño: " << resultado.size() << endl;
+    for (auto res : resultado){
+        cout << res << endl;
+        res.show_incommingConct();
+        res.show_outgoingConct();
+    }
+
+
+
+    delete datos;
 
     cout << "Hola" << endl;
     return 0;

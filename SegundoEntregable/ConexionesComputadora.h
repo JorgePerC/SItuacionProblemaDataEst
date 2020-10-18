@@ -21,16 +21,23 @@ public:
     //SourceIp, SourceName : vector <Details>
     ConexionesComputadora ();
     ConexionesComputadora (string, string);
+    ConexionesComputadora (Details);
     //Returns incomingConct *Puedo cambiar la estructura
     vector <string> const get_incommingConct();
     vector <string> const get_outgoingConct();
 
+    string const get_lastIP();
     string const get_name();
     string const get_IP();
 
     //Add a registers to the ip
-    void add_incommingConct(Details*);
-    void add_outgoingConct(Details*);
+    void add_incommingConct(Details);
+    void add_outgoingConct(Details);
+
+    void show_incommingConct();
+    void show_outgoingConct();
+
+    friend ostream & operator << (ostream & os, const ConexionesComputadora & CC);
     
     
 };

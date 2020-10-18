@@ -23,6 +23,8 @@ private:
     vector <Details> allDetails;
     //To get the last number on the IP address
     string getLocalIP(string);
+
+    bool isInAllConnections(Details);
     
 public:
     ConnectionManager();
@@ -38,6 +40,8 @@ public:
     //Sumary
     vector <ConexionesComputadora> get_allConnections();
 
-    void registerConnections(Details*);
+    void registerConnections(Details);
+
+    void fill_allConnections();
 
 };
