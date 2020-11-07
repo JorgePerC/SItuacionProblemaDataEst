@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[]){
+int main3(int argc, char const *argv[]){
 //    path al csv del equipo
     string filePath = "../Files/equipo4_try.csv";
 //    usar clase CSV para abrir el archivo

@@ -27,7 +27,7 @@ public:
     CSV();
     CSV(string filename);
     vector<Details> read_csv_details();
-    
+    vector<string> getUniqueRowData();
 };
 
 #endif /* CSV_hpp */

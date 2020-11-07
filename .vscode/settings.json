@@ -3,6 +3,7 @@
         "string": "cpp",
         "bitset": "cpp",
         "iosfwd": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "tuple": "cpp"
     }
 }
