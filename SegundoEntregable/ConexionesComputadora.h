@@ -13,15 +13,18 @@ private:
     // Attributes
     string IP, name;
 
+    
+
+public: 
     //Vectors 
     vector <string> incommingConct;
     vector <string> outgoingConct; 
 
-public: 
     //SourceIp, SourceName : vector <Details>
     ConexionesComputadora ();
+    ConexionesComputadora (const ConexionesComputadora &c);
     ConexionesComputadora (string, string);
-    ConexionesComputadora (Details);
+    ConexionesComputadora (Details, bool);
     //Returns incomingConct *Puedo cambiar la estructura
     vector <string> const get_incommingConct();
     vector <string> const get_outgoingConct();
@@ -39,5 +42,6 @@ public:
 
     friend ostream & operator << (ostream & os, const ConexionesComputadora & CC);
     
+    friend bool operator < (const ConexionesComputadora &, const ConexionesComputadora &);
     
 };

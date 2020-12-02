@@ -1,11 +1,14 @@
 #include <vector>
 #include <string>
-#include "ConexionesComputadora.h"
 #include <algorithm>
 #include <iterator> 
 #include <string>
 #include <regex>
+#include <set>
+#include <iostream>
+
 #include "../POO/Details.hpp"
+#include "ConexionesComputadora.h"
 
 /**
  * Class to manage ConexionesComputadora 
@@ -19,12 +22,12 @@ class ConnectionManager{
 private:
     // Vector to save all IP's and their 
     // in/out directions
-    vector <ConexionesComputadora> allConnections;
+    set <ConexionesComputadora*> allConnections; // Lo cambié a set, para más rápido
     vector <Details> allDetails;
     //To get the last number on the IP address
     string getLocalIP(string);
 
-    bool isInAllConnections(Details);
+    // bool isInAllConnections(Details);
     
 public:
     ConnectionManager();
@@ -38,10 +41,10 @@ public:
     void get_IPinfo(string);
 
     //Sumary
-    vector <ConexionesComputadora> get_allConnections();
+    set <ConexionesComputadora*> get_allConnections();
 
-    void registerConnections(Details);
+    void registerConnections();
 
-    void fill_allConnections();
+    void fill_allConnections(bool);
 
 };

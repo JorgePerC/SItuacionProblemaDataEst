@@ -1,4 +1,10 @@
 #include "ConexionesComputadora.h"
+ConexionesComputadora::ConexionesComputadora(const ConexionesComputadora &c) {
+    this -> IP = c.IP; 
+    this -> name = c.name; 
+    this -> incommingConct = c.incommingConct;
+    this -> outgoingConct = c.outgoingConct;
+}
 
 ConexionesComputadora::ConexionesComputadora(){
     this -> IP = "";
@@ -10,17 +16,22 @@ ConexionesComputadora::ConexionesComputadora(string name, string IP){
     this -> name = name;
 }
 
-ConexionesComputadora::ConexionesComputadora(Details d){
-    this -> IP = d.getSourceIP();
-    this -> name = d.getSourceName();
+ConexionesComputadora::ConexionesComputadora(Details d, bool isExternal = false){
+    if (isExternal){
+        this -> IP = d.getDestinationIP();
+        this -> name = d.getDestinationName();
+    }else{
+        this -> IP = d.getSourceIP();
+        this -> name = d.getSourceName();
+    }
 }
 
 void ConexionesComputadora::add_incommingConct(Details connectionRegister){
-    incommingConct.push_back(connectionRegister.getDestinationIP());
+    this -> incommingConct.push_back(connectionRegister.getSourceIP());
 }
 
 void ConexionesComputadora::add_outgoingConct(Details connectionRegister){
-    outgoingConct.push_back(connectionRegister.getSourceIP());
+    this -> outgoingConct.push_back(connectionRegister.getDestinationIP());
 }
 
 string const ConexionesComputadora::get_IP(){
@@ -48,11 +59,14 @@ ostream & operator << (ostream & os, const ConexionesComputadora & CC) {
     os << endl;
     return os;
 }
+bool operator < (const ConexionesComputadora & CC, const ConexionesComputadora & CC2) {
+    return CC.IP < CC2.IP;
+}
 
 void ConexionesComputadora ::show_incommingConct(){
-    for (auto element: incommingConct){
-        cout << "\t" << element << endl;
-    }
+    // for (auto element: incommingConct){
+    //     cout << "\t" << element << endl;
+    // }
     cout << "------------- "<< incommingConct.size() << endl;
 }
 

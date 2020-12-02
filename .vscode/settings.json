@@ -4,6 +4,11 @@
         "bitset": "cpp",
         "iosfwd": "cpp",
         "typeinfo": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp",
+        "ostream": "cpp"
     }
 }
